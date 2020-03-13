@@ -40,11 +40,17 @@
 	 			let angle = Jackson.utl.randomInt(rotate);
 
 	 			element.style.transform = 'rotate(' + angle + 'deg)' + 'translate(' + stepX +'px, ' + stepY + 'px)';
+	 			element.style.-webkit-transform = 'rotate(' + angle + 'deg)' + 'translate(' + stepX +'px, ' + stepY + 'px)';
 	 		}, 500 / speed);
 
 	 		Jackson.dance.intervals.set(element, inter);
  		}
  	};
+
+ 	Jackson.dance.moonWalk = function(element) {
+ 		Jackson.dance.stop(element);
+ 		//Todo
+ 	}
 
  	exports.Jackson = Jackson;
  }(this));
