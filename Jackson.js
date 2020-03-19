@@ -100,5 +100,13 @@
  		}
  	}
 
+ 	//add hat emoji 🎩 on element text.
+ 	Jackson.dance.hatOn = function (element) {
+ 		if(element.innerText) {
+ 			if(element.innerText.charCodeAt(0)!= 55356)
+ 			element.innerText = "🎩" + element.innerText;
+ 		}
+ 	}
+
  	exports.Jackson = Jackson;
  }(this));
